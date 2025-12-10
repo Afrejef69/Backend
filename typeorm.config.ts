@@ -2,11 +2,11 @@ import { DataSource } from 'typeorm';
 
 export const dataSource = new DataSource({
   type: 'postgres',
-  host: 'localhost',
-  port: 5432,
+  host: 'maglev.proxy.rlwy.net',
+  port: 28329,
   username: 'postgres',
-  password: 'prueba1234',
-  database: 'prueba',
+  password: 'MPyyhVyOkMTdSTeHCnfxkkETYuIDMkVd',
+  database: 'railway',
   synchronize: false,
   entities: ['src/**/*.entity{.ts, .js}'],
   migrations: ['./src/migrations/*.ts'],
