@@ -9,7 +9,7 @@ import * as Joi from '@hapi/joi';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: '.env.local',
+      envFilePath: '.env',
       validationSchema: Joi.object({
         DB_HOST: Joi.string().required(),
         DB_PORT: Joi.number().default(5432),
